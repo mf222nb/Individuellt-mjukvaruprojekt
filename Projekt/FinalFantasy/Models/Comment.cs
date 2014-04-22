@@ -5,9 +5,10 @@ using System.Web;
 
 namespace FinalFantasy.Models
 {
-    public class Site
+    public class Comment
     {
+        public int CommentID { get; set; }
         public int SiteID { get; set; }
-        public string SiteName { get; set; }
+        public string Comment { get; set; }
     }
 }

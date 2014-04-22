@@ -11,15 +11,17 @@ namespace FinalFantasy.Controllers
     {
         //
         // GET: /Game/
+        FinalFantasyEntities gameDB = new FinalFantasyEntities();
 
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        public ActionResult Details(int id) 
+        public ActionResult Index()
         {
-            var site = new Site { Sida = "Sida " + id };
+            var games = gameDB.Site.ToList();
+            return View(games);
+        }
+
+        public ActionResult Details(string game) 
+        {
+            var site = new Site { SiteName = "Sida " + game };
 
             return View(site);
         }
