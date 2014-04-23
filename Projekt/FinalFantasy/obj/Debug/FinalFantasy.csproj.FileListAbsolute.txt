@@ -24,6 +24,6 @@ C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFant
 C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFantasy\bin\System.Web.WebPages.xml
 C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFantasy\bin\System.Web.WebPages.Deployment.xml
 C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFantasy\bin\System.Web.WebPages.Razor.xml
-C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFantasy\obj\Debug\FinalFantasy.csprojResolveAssemblyReference.cache
 C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFantasy\obj\Debug\FinalFantasy.dll
 C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFantasy\obj\Debug\FinalFantasy.pdb
+C:\Users\mf222nb\Documents\GitHub\Individuellt-mjukvaruprojekt\Projekt\FinalFantasy\obj\Debug\FinalFantasy.csprojResolveAssemblyReference.cache

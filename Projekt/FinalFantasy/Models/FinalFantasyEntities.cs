@@ -8,7 +8,7 @@ namespace FinalFantasy.Models
 {
     public class FinalFantasyEntities : DbContext
     {
-        public DbSet<Comment> Comment { get; set; }
-        public DbSet<Site> Site { get; set; }
+        public DbSet<Comments> Comments { get; set; }
+        public DbSet<Site> Sites { get; set; }
     }
 }

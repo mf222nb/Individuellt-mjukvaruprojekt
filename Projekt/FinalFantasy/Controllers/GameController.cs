@@ -15,7 +15,7 @@ namespace FinalFantasy.Controllers
 
         public ActionResult Index()
         {
-            var games = gameDB.Site.ToList();
+            var games = gameDB.Sites.ToList();
             return View(games);
         }
 
