@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalFantasy.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,8 @@ namespace FinalFantasy.Controllers
         //
         // GET: /Home/
 
+        FinalFantasyEntities gameDB = new FinalFantasyEntities();
+
         public ActionResult Index()
         {
             return View();
@@ -21,9 +24,16 @@ namespace FinalFantasy.Controllers
             return View();
         }
 
-        public ActionResult Game()
+        public ActionResult FinalFantasy1(int id)
         {
-            return View();
+            var game = gameDB.Sites.Find(id);
+            return View(game);
+        }
+
+        public ActionResult FinalFantasy2(int id)
+        {
+            var game = gameDB.Sites.Find(id);
+            return View(game);
         }
     }
 }

@@ -10,13 +10,14 @@
 <body>
     <header>
         <div>
-            <p>@Html.ActionLink("your logo here", "Index", "Home")</p>
+            <p>your logo here</p>
         </div>
         <nav>
             <ul id="menu">
                 <li>@Html.ActionLink("Hem", "Index", "Home")</li>
                 <li>@Html.ActionLink("Om", "About", "Home")</li>
-                <li><a href="/Game/">Final Fantasy Games</a></li>
+                <li>@Html.ActionLink("Final Fantasy 1", "FinalFantasy1", new {id = "1" })</li>
+                <li>@Html.ActionLink("Final Fantasy 2", "FinalFantasy2", new {id = "2" })</li>
             </ul>
         </nav>
     </header>
