@@ -7,27 +7,18 @@ using System.Web.Mvc;
 
 namespace FinalFantasy.Controllers
 {
-    public class HomeController : Controller
+    public class FinalFantasy1Controller : Controller
     {
         //
-        // GET: /Home/
+        // GET: /FinalFantasy1/
 
         FinalFantasyEntities gameDB = new FinalFantasyEntities();
 
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult FinalFantasy2(int id)
+        public ActionResult FinalFantasy1(int id)
         {
             var game = gameDB.Sites.Find(id);
             return View(game);
         }
+
     }
 }
