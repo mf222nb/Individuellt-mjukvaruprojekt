@@ -167,6 +167,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\FinalFantasy2.cshtml" />
     <Content Include="Views\FinalFantasy1\FinalFantasy1.cshtml" />
+    <Content Include="Views\FinalFantasy1\Details.cshtml" />
+    <Content Include="Views\FinalFantasy1\Create.cshtml" />
+    <Content Include="Views\FinalFantasy1\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,6 +13,8 @@ namespace FinalFantasy.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CommentID { get; set; }
         public int SiteID { get; set; }
+        [Required(ErrorMessage = "Måste ange en bokstav")]
+        [StringLength(5000)]
         public string Comment { get; set; }
     }
 }
