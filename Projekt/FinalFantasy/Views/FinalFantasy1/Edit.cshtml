@@ -15,12 +15,20 @@
 
         @Html.HiddenFor(model => model.CommentID)
 
+        @*<div class="editor-label">
+            @Html.LabelFor(model => model.SiteID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SiteID)
+            @Html.ValidationMessageFor(model => model.SiteID)
+        </div>*@
+
         <div class="editor-label">
             @Html.LabelFor(model => model.Comment)
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.Comment)
-            @Html.ValidationMessageFor(model => model.Comment)
+            @*@Html.ValidationMessageFor(model => model.Comment)*@
         </div>
 
         <p>
