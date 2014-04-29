@@ -53,7 +53,7 @@ namespace FinalFantasy.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="Comment")]Comments comment)
+        public ActionResult Edit(Comments comment)
         {
             if (ModelState.IsValid)
             {
