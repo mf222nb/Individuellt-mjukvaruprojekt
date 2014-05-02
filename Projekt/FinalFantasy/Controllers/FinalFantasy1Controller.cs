@@ -53,15 +53,15 @@ namespace FinalFantasy.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Comments comment)
+        public ActionResult Edit(Comments editComment)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(comment).State = EntityState.Modified;
+                db.Entry(editComment).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Details");
             }
-            return View(comment);
+            return View(editComment);
         }
     }
 }
