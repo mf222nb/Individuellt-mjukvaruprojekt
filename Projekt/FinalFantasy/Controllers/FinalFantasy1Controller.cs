@@ -28,23 +28,27 @@ namespace FinalFantasy.Controllers
             return View(comment);
         }
 
+        //Sapa kommentarer
         public ActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Create(Comments comment)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Comments createComment)
         {
             if (ModelState.IsValid)
             {
-                db.Comments.Add(comment);
+                createComment.SiteID = 1;
+                db.Comments.Add(createComment);
                 db.SaveChanges();
-                return RedirectToAction("Details");
+                return RedirectToAction("Details", new { id = "1" });
             }
-            return View(comment);
+            return View(createComment);
         }
 
+        //Redigera kommentarer
         public ActionResult Edit(int id)
         {
             var comment = db.Comments.Find(id);
@@ -59,9 +63,25 @@ namespace FinalFantasy.Controllers
             {
                 db.Entry(editComment).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Details");
+                return RedirectToAction("Details", new { id = "1" });
             }
             return View(editComment);
+        }
+
+        //Radera kommentarer
+        public ActionResult Delete(int id)
+        {
+            var comment = db.Comments.Find(id);
+            return View(comment);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            var comment = db.Comments.Find(id);
+            db.Comments.Remove(comment);
+            db.SaveChanges();
+            return RedirectToAction("Details", new { id = "1" });
         }
     }
 }
