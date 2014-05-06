@@ -1,0 +1,36 @@
+﻿@model FinalFantasy.Models.Site
+
+@{
+    ViewBag.Title = "FinalFantasy2";
+}
+
+<h2>@Model.SiteName</h2>
+
+<p>
+    Final Fantasy 2 är ett RPG - spel, utvecklat av Square 1988 som blev den andra delen av Final Fantasy serien. Spelet släpptes inte utanför 
+    Japan, när Final Fantasy 4 släpptes i USA så kallades den Final Fantasy 2 för att inte förvirra spelare.
+</p>
+
+<h4>Uppbyggnad</h4>
+
+<p>
+    Precis som i förra spelet så styr du en grupp på 4 karaktärer och har olika klasser på varje karaktär. Det nya i detta spel är "Word Memory" 
+    systemet som går ut på att när man pratar med en icke spelande karaktär (så kallad NPC), så kan spelare fråga om saker och memorera all 
+    nyttiga nyckelord elelr meningar som sedan kan upprepas till andra NPCs för att få mer information eller för att få nya förmågor till 
+    ens karaktärer. En annan sak är också att man nu kan utföra strider med mindre än 4 karaktärer vilket inte var möjligt i det första spelet.
+</p>
+
+<h4>Story</h4>
+
+<p>
+    Hela historien börjar när Firion, Maria, Guy och Leon blir attackerade av Palamecian Black Knight soldater och blir lämnade att dö. Firion, Maria 
+    och Guy blir dock räddade av prinsessan Hilda som har byggt upp en rebell bas i Altair efter att hennes kungarike blev invaderat av kejsaren. 
+    De tre försöker kommmed i rebellerna men Hilda vägrar låta dem gå med för att de är för unga och oerfarna. De tre av dem ger sig iväg för 
+    att leta reda på Leon men hittar istället en döende prins som heter Scott, det är Hildas fästman som berättar för dem att en före detta 
+    krigare från Fynn, Borghen, förådde rebellerna och blev general i imperiets arme. De tre återvänder till Altair för att informera Hilda. 
+    Hon låter gruppen gå med och ber dem att gå norrut för att hitta mythril, en metall som man kunde använda för att göra kraftfulla vapen med. 
+    Gruppen ger sig iväg norrut till den ockupperade byn Salamand, räddar alla bybor som var tvingade att jobba i de närliggande gruvorna, och 
+    hämtar mythril.
+</p>
+
+@Html.ActionLink("Kommentarer", "Details", new {id = Model.SiteID })

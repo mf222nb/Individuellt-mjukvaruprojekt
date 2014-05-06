@@ -127,6 +127,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\FinalFantasy1Controller.cs" />
+    <Compile Include="Controllers\FinalFantasy2Controller.cs" />
+    <Compile Include="Controllers\FinalFantasy3Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -165,12 +167,21 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\FinalFantasy2.cshtml" />
     <Content Include="Views\FinalFantasy1\FinalFantasy1.cshtml" />
     <Content Include="Views\FinalFantasy1\Details.cshtml" />
     <Content Include="Views\FinalFantasy1\Edit.cshtml" />
     <Content Include="Views\FinalFantasy1\Create.cshtml" />
     <Content Include="Views\FinalFantasy1\Delete.cshtml" />
+    <Content Include="Views\FinalFantasy2\FinalFantasy2.cshtml" />
+    <Content Include="Views\FinalFantasy2\Details.cshtml" />
+    <Content Include="Views\FinalFantasy2\Create.cshtml" />
+    <Content Include="Views\FinalFantasy2\Edit.cshtml" />
+    <Content Include="Views\FinalFantasy2\Delete.cshtml" />
+    <Content Include="Views\FinalFantasy3\FinalFantasy3.cshtml" />
+    <Content Include="Views\FinalFantasy3\Details.cshtml" />
+    <Content Include="Views\FinalFantasy3\Create.cshtml" />
+    <Content Include="Views\FinalFantasy3\Edit.cshtml" />
+    <Content Include="Views\FinalFantasy3\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

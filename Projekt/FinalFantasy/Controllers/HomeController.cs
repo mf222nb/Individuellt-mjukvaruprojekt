@@ -12,8 +12,6 @@ namespace FinalFantasy.Controllers
         //
         // GET: /Home/
 
-        FinalFantasyEntities gameDB = new FinalFantasyEntities();
-
         public ActionResult Index()
         {
             return View();
@@ -22,12 +20,6 @@ namespace FinalFantasy.Controllers
         public ActionResult About()
         {
             return View();
-        }
-
-        public ActionResult FinalFantasy2(int id)
-        {
-            var game = gameDB.Sites.Find(id);
-            return View(game);
         }
     }
 }

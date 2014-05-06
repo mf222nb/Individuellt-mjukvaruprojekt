@@ -1,27 +1,27 @@
 ﻿using FinalFantasy.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Data;
 
 namespace FinalFantasy.Controllers
 {
-    public class FinalFantasy1Controller : Controller
+    public class FinalFantasy2Controller : Controller
     {
         //
-        // GET: /FinalFantasy1/
+        // GET: /FinalFantasy2/
 
         FinalFantasyEntities db = new FinalFantasyEntities();
 
-        public ActionResult FinalFantasy1(int id)
+        public ActionResult FinalFantasy2(int id)
         {
             var game = db.Sites.Find(id);
             return View(game);
         }
 
-        //Hämtar ut alla kommentarerna som tillhör en viss sida
+        //Hämtar ut alla kommentarer som tillhör ett visst sidID
         public ActionResult Details(int id)
         {
             var comment = db.Comments.Where(c => c.SiteID == id); ;
@@ -34,17 +34,17 @@ namespace FinalFantasy.Controllers
             return View();
         }
 
-        //När man ska posta till databasen så tar denna hand om det
+        //När man ska posta till databasen så tar denna Create hand om det
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Comments createComment)
         {
             if (ModelState.IsValid)
             {
-                createComment.SiteID = 1;
+                createComment.SiteID = 2;
                 db.Comments.Add(createComment);
                 db.SaveChanges();
-                return RedirectToAction("Details", new { id = "1" });
+                return RedirectToAction("Details", new { id = "2" });
             }
             return View(createComment);
         }
@@ -56,6 +56,7 @@ namespace FinalFantasy.Controllers
             return View(comment);
         }
 
+        //När det ska ske en post så tar denna Edit hand om det
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Comments editComment)
@@ -64,7 +65,7 @@ namespace FinalFantasy.Controllers
             {
                 db.Entry(editComment).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Details", new { id = "1" });
+                return RedirectToAction("Details", new { id = "2" });
             }
             return View(editComment);
         }
@@ -76,13 +77,14 @@ namespace FinalFantasy.Controllers
             return View(comment);
         }
 
+        //När det sker en post och man ska ta bort en kommentar så tar denna DeleteConfirmed hand om detta.
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
             var comment = db.Comments.Find(id);
             db.Comments.Remove(comment);
             db.SaveChanges();
-            return RedirectToAction("Details", new { id = "1" });
+            return RedirectToAction("Details", new { id = "2" });
         }
     }
 }
