@@ -26,6 +26,22 @@ ul#menu {
             text-decoration: none;
         }
 
+            ul li ul {
+                display: none;
+                max-width: 150px;
+                margin: 0 auto;
+            }
+
+                ul li:hover ul {
+                    display: block;
+                }
+
+                    ul ul li {
+                        display: block;
+                        width: 100%;
+                        white-space: nowrap;
+                    }
+
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {
