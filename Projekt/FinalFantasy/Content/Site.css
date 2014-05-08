@@ -3,10 +3,30 @@
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #383838;
+    color: #d9d9d9;
 }
 
 header, footer, nav, section {
     display: block;
+}
+
+nav {
+    background-color: #3d3d3d;
+    border-radius: 5px 5px 5px 5px;
+}
+h1 {
+    color: #d9d9d9;
+}
+
+h2 {
+    color: #d9d9d9;
+}
+
+a {
+    color: #d9d9d9;
 }
 
 /* menu
@@ -17,30 +37,49 @@ ul#menu {
 }
 
     ul#menu li {
-        display: inline;
+        display: inline-block;
         list-style: none;
+        color: #d9d9d9;
     }
-
-        ul#menu li a {
-            background: none;
-            text-decoration: none;
+        
+        ul#menu li:hover {
+            background-color: #550101;
         }
 
-            ul li ul {
-                display: none;
-                max-width: 150px;
-                margin: 0 auto;
+            ul#menu li a {
+                background: none;
+                text-decoration: none;
+                color: #d9d9d9;
+                height: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                display: inline-block;
+                line-height: 50px;
             }
 
-                ul li:hover ul {
-                    display: block;
+                ul li ul {
+                    position: absolute;
+                    display: none;
+                    max-width: 150px;
+                    padding: 0;
                 }
 
-                    ul ul li {
+                    ul li:hover ul {
                         display: block;
-                        width: 100%;
-                        white-space: nowrap;
+                        background-color: #3d3d3d;
+                        margin: 0 auto;
                     }
+
+                        ul ul li {
+                            display: block;
+                            width: 100%;
+                            white-space: nowrap;
+                        }
+
+                            ul li ul a {
+                                width: 100%;
+                            }
+
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
