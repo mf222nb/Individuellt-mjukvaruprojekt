@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\FinalFantasyEntities.cs" />
+    <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Site.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -188,9 +189,11 @@
     <Content Include="Views\FinalFantasy4\Create.cshtml" />
     <Content Include="Views\FinalFantasy4\Edit.cshtml" />
     <Content Include="Views\FinalFantasy4\Delete.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -10,5 +10,6 @@ namespace FinalFantasy.Models
     {
         public DbSet<Comments> Comments { get; set; }
         public DbSet<Site> Sites { get; set; }
+        public DbSet<Image> Images { get; set; }
     }
 }

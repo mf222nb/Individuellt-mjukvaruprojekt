@@ -1,0 +1,17 @@
+﻿@model FinalFantasy.Models.Image
+
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<h2>Gallery</h2>
+
+@using (Html.BeginForm("FileUpload", "Home", FormMethod.Post,
+                    new { enctype = "multipart/form-data" }))
+{
+    <div>
+    Image<br />
+    <input type="file" name="file" id="file" style="width: 100%;" /> <br />
+    <input type="submit" value="Upload" class="submit" />
+    </div>    
+}
