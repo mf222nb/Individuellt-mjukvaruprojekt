@@ -1,27 +1,26 @@
 ﻿using FinalFantasy.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Data;
 
 namespace FinalFantasy.Controllers
 {
-    public class FinalFantasy1Controller : Controller
+    public class FinalFantasy5Controller : Controller
     {
         //
-        // GET: /FinalFantasy1/
+        // GET: /FinalFantasy5/
 
         FinalFantasyEntities db = new FinalFantasyEntities();
 
-        public ActionResult FinalFantasy1(int id)
+        public ActionResult FinalFantasy5(int id)
         {
             var game = db.Sites.Find(id);
             return View(game);
         }
 
-        //Hämtar ut alla kommentarerna som tillhör en viss sida
         public ActionResult Details(int id)
         {
             var comment = db.Comments.Where(c => c.SiteID == id);
@@ -41,10 +40,10 @@ namespace FinalFantasy.Controllers
         {
             if (ModelState.IsValid)
             {
-                createComment.SiteID = 1;
+                createComment.SiteID = 5;
                 db.Comments.Add(createComment);
                 db.SaveChanges();
-                return RedirectToAction("Details", new { id = "1" });
+                return RedirectToAction("Details", new { id = "5" });
             }
             return View(createComment);
         }
@@ -64,7 +63,7 @@ namespace FinalFantasy.Controllers
             {
                 db.Entry(editComment).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Details", new { id = "1" });
+                return RedirectToAction("Details", new { id = "5" });
             }
             return View(editComment);
         }
@@ -82,7 +81,7 @@ namespace FinalFantasy.Controllers
             var comment = db.Comments.Find(id);
             db.Comments.Remove(comment);
             db.SaveChanges();
-            return RedirectToAction("Details", new { id = "1" });
+            return RedirectToAction("Details", new { id = "5" });
         }
     }
 }

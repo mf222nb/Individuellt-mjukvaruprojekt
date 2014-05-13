@@ -47,6 +47,12 @@ namespace FinalFantasy.Controllers
 
         public ActionResult Gallery()
         {
+            var image = db.Images.ToList();
+            return View(image);
+        }
+
+        public ActionResult Upload()
+        {
             return View();
         }
     }

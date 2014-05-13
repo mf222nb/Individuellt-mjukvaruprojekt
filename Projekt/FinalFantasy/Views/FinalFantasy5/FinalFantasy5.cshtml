@@ -1,0 +1,9 @@
+﻿@model FinalFantasy.Models.Site
+
+@{
+    ViewBag.Title = "FinalFantasy5";
+}
+
+<h2>@Model.SiteName</h2>
+
+@Html.ActionLink("Gå till kommentarer", "Details", new {id = Model.SiteID })

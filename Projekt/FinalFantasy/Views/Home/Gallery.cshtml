@@ -1,17 +1,29 @@
-﻿@model FinalFantasy.Models.Image
+﻿@model IEnumerable<FinalFantasy.Models.Image>
 
 @{
     ViewBag.Title = "Gallery";
 }
 
-<h2>Gallery</h2>
+<h2>Galleri</h2>
 
-@using (Html.BeginForm("FileUpload", "Home", FormMethod.Post,
-                    new { enctype = "multipart/form-data" }))
-{
-    <div>
-    Image<br />
-    <input type="file" name="file" id="file" style="width: 100%;" /> <br />
-    <input type="submit" value="Upload" class="submit" />
-    </div>    
-}
+@Html.ActionLink("Ladda upp bilder", "Upload", "Home")
+
+<p></p>
+
+<table border="1">
+<thead>
+    <tr>
+        <th>Image</th>
+        <th>Name</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><img src="~/images/@item.Name" width="200" height="200" /></td>
+            <td>@item.Name</td>
+        </tr>
+    }
+</tbody>
+</table>
