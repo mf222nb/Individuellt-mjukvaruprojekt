@@ -197,6 +197,7 @@
     <Content Include="Views\FinalFantasy5\Create.cshtml" />
     <Content Include="Views\FinalFantasy5\Edit.cshtml" />
     <Content Include="Views\FinalFantasy5\Delete.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

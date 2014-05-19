@@ -1,4 +1,4 @@
-﻿@model FinalFantasy.Models.Comments
+﻿@model FinalFantasy.Models.Image
 
 @{
     ViewBag.Title = "Delete";
@@ -8,13 +8,13 @@
 
 <p>
     Är du säker på att du vill ta bort denna kommentar 
-    <strong>@Model.Comment</strong>
+    <strong>@Model.Name</strong>
 </p>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
     <p>
         <input type="submit" value="Ta bort" /> |
-        @Html.ActionLink("Gå tillbaka", "FinalFantasy5", new { id = "5" })
+        @Html.ActionLink("Gå tillbaka", "Gallery", "Home")
     </p>
 }

@@ -6,10 +6,12 @@
 
 <h2>Galleri</h2>
 
-@Html.ActionLink("Ladda upp bilder", "Upload", "Home")
-
-<p></p>
-
+<div>
+    @ViewData["Error"]
+</div>
+<p>
+    @Html.ActionLink("Ladda upp bilder", "Upload", "Home")
+</p>
 <table border="1">
 <thead>
     <tr>
@@ -21,7 +23,8 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td><img src="~/images/@item.Name" width="200" height="200" /></td>
+            <td><img src="~/images/@item.Name" width="200" height="200" />
+                <p>@Html.ActionLink("Ta bort", "Delete", new { id=item.ImageID })</p></td>
             <td>@item.Name</td>
         </tr>
     }
