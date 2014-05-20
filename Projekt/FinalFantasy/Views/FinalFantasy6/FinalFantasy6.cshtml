@@ -1,0 +1,85 @@
+﻿@model FinalFantasy.Models.Site
+
+@{
+    ViewBag.Title = "FinalFantasy6";
+}
+
+<h2>@Model.SiteName</h2>
+
+<p>
+    Final Fantasy 6 är den sjätte delen i Final Fantasy serien från SquareSoft. Detta spel var det tredje spelet i serien som släpptes i 
+    USA 1994 och hette då Final Fantasy 3, men när Final Fantasy 7 blev så populärt så öpnnade sig möjligheterna för att släppa äldre 
+    delar av serien och då släpptes spelet med sitt ursprungliga nummer.
+</p>
+
+<h4>Story</h4>
+
+<p>
+    Spelet börjar med att soldaten Terra tillsammans med Wedge och Biggs anfaller gruvstaden Narche för att få tag på en esper. Men det 
+    händer något lustigt när Terra och hennes medhjälpare når espern och både den och Terra reagerar på något lustigt sätt, och på 
+    samma gång så dör Wedge och Biggs. Terra hittas senare medvetslös av en medlem inom motståndarrörelsen <em>The Rturners</em>, men 
+    när hon vaknar så har hon inga minnen om de senaste händelserna. Tillsammans med Locke så flyr hon från vakterna från Narche och 
+    möter ett stort äventyr framför sig.
+</p>
+
+<h4>Karaktärer</h4>
+
+<p>
+    I Final Fantasy 6 så finns det 14 spelbara karaktärer
+</p>
+<ul>
+    <li>
+        <strong>Terra Branford:</strong> Terra är spelets huvudperson och har blivit känd som den första kvinnliga huvudpersonen inom 
+        inom final fantasy - serierna. Hon brukade jobba som en soldat inom <em>The Empire</em> men det visade sig senare att hon 
+        var hjärntvättad för att göra deras smutsjobb. Hon har en mystisk bakgrund och kan använda magi.
+    </li>
+    <li>
+        <strong>Locke Cole:</strong> Locke är en tjuv som räddade Terra från att fångas av Narches vakter. Han vill alltid att folk ska 
+        kalla honom för <em>Treasure hunter</em> och är bra på att stjäla saker inom strider. Han söker ständigt efter en väg för att 
+        kunna återuppliva hans förlorade kärlek, Rachel.
+    </li>
+    <li>
+        <strong>Cyan Garamonde:</strong> Cyan är en soldat från Doma. Han förlorade sina vänner och sin familj när Kefka förgiftade 
+        vattenförsörjningen i Doma. Han väljer att gå med i The Returners för att kunna hämnas mot Empire och han är väldigt rädd 
+        för maskinen.
+    </li>
+    <li>
+        <strong>Shadow:</strong> Shadow är en mystisk man som reser runt världen tillsammans med sin hund Interceptor. Han bär en 
+        mystisk bakgrund och avskyr drömmar. Han kan kasta vapen inom strider.
+    </li>
+    <li>
+        <strong>Edgar Roni Figaro:</strong> Edgar är härskaren i Figaro och en stor tjejtjusare. Han använder olika saker inom strider, 
+        så som motorsågar, skruvdragare, m.m.
+    </li>
+    <li>
+        <strong>Sabin Rene Figaro:</strong> Sabin är Edgars tvillingbror som lämnade Figaro efter att deras pappa dog. Han kan slåss 
+        med bara händer inom strider och kan använda Blitz-tekniker.
+    </li>
+    <li>
+        <strong>Celes Chere:</strong> Celese är en före detta general inom Empire. Locke räddade henne från att avrättas när hon hade 
+        förrått Empire. När Locke möter henn ser han henne som Rachel och som Terra så kan hon använda magi inom strider.
+    </li>
+    <li>
+        Strago Magus
+    </li>
+    <li>
+        Relm Arrowny
+    </li>
+    <li>
+        Setzer Gabbiani
+    </li>
+    <li>
+        Mog
+    </li>
+    <li>
+        Gau
+    </li>
+    <li>
+        Gogo
+    </li>
+    <li>
+        Umaro
+    </li>
+</ul>
+
+@Html.ActionLink("Gå till kommentarer", "Details", new {id = Model.SiteID })
