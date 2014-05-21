@@ -133,6 +133,7 @@
     <Compile Include="Controllers\FinalFantasy5Controller.cs" />
     <Compile Include="Controllers\FinalFantasy6Controller.cs" />
     <Compile Include="Controllers\FinalFantasy7Controller.cs" />
+    <Compile Include="Controllers\FinalFantasy8Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -206,6 +207,15 @@
     <Content Include="Views\FinalFantasy6\Edit.cshtml" />
     <Content Include="Views\FinalFantasy6\Delete.cshtml" />
     <Content Include="Views\FinalFantasy7\FinalFantasy7.cshtml" />
+    <Content Include="Views\FinalFantasy7\Details.cshtml" />
+    <Content Include="Views\FinalFantasy7\Create.cshtml" />
+    <Content Include="Views\FinalFantasy7\Edit.cshtml" />
+    <Content Include="Views\FinalFantasy7\Delete.cshtml" />
+    <Content Include="Views\FinalFantasy8\FinalFantasy8.cshtml" />
+    <Content Include="Views\FinalFantasy8\Details.cshtml" />
+    <Content Include="Views\FinalFantasy8\Create.cshtml" />
+    <Content Include="Views\FinalFantasy8\Edit.cshtml" />
+    <Content Include="Views\FinalFantasy8\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

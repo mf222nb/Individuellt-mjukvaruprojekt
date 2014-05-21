@@ -1,0 +1,62 @@
+﻿@model FinalFantasy.Models.Site
+
+@{
+    ViewBag.Title = "FinalFantasy8";
+}
+
+<h2>@Model.SiteName</h2>
+
+<p>
+    Final Fantasy 8 är den åttonde delen i serien Final Fantasy som släpptes både till Playstation och Windows. Spelet är utvecklat 
+    av Squaresoft.
+</p>
+
+<h4>Handling</h4>
+
+<p>
+    Detta spel börjar med att man får möta Squall Leonhart som är en student och han går på militärskolan Balamb Garden. Han blir 
+    blir sedan medlem i Gardens elitstyrka SeeD. Efter vissa händelser dras han och hans kamrater in i en internationell konflikt 
+    och måste hindra trollpackan Edea att förstöra världen.
+</p>
+
+<h4>Spelsystem</h4>
+
+<p>
+    <strong>Junction</strong>
+</p>
+<p>
+    För att kunna använda andra egenskaper än vanliga attacker i strid så måste man utrusta sig med Guardian Forces (GF). Med dessa 
+    kan man förbättra sina karaktärers status så som styrka/magi/hastighet och så vidare och dessutom ge karaktärerna fler egenskaper 
+    i strid som magi, item, draw, till och med GF vilket låter en frammana en specifik GF att attackera motståndaren eller läka sitt 
+    lag med. Många GF har andra egenskaper som tillåter en att ändra vissa saker till magier eller till andra saker.
+</p>
+<p>
+    <strong>Stridssystem</strong>
+</p>
+<p>
+    När man möter fiender kan man ta med sig max 3 karaktärer åt gången, stridsordningen baserar sig på "ATP" vilket i klartext är 
+    att varje karaktär har en egen mätare som växer och när den är klar så kan man välja vad denne ska göra från en meny.
+</p>
+<ul>
+    <li>
+        Magi - En stor skillnad i Final Fantasy 8 är att inga karaktärer har MP (Magipoäng) istället drar man magier från fiender 
+        eller vissa magipunkter (så kallade "drawpoints") eller skapar från olika saker.
+    </li>
+    <li>
+        Vapen och rustning - Varje karaktär har sin sorts vapen, men man byter inte ut vapnen utan man uppgraderar dem istället för 
+        att de ska bli bättre. Detta gör man vid vissa verkstäder och man behöver även ha särskilda saker för en viss uppgradering. 
+        Rustningar har ingen då det ersattes med Junctionsystemet.
+    </li>
+    <li>
+        Limit Break - När en karaktärs HP går under en viss procent så blir mätaren gul. Karaktären kan då genomföra en Limit Break 
+        vilket är en extrem attack som vanligen baserar sig på karaktärens personlighet. Vissa är mer interaktiva medans man i andra 
+        Limit breaks väljer attacker som karaktären genomför.
+    </li>
+    <li>
+        Erfarenhetspoäng - När en karaktär har samlat på sig 1000 exp så går karaktären upp i level och blir då starkare. Vad som skiljer 
+        Final Fantasy 8 från övriga är att fiender går med upp i level i takt med din grupps nivå. Det är har som Guardian Forces kommer 
+        till användning, då de med går upp i level. Dessa används för att få fördelar i strider.
+    </li>
+</ul>
+
+@Html.ActionLink("Gå till kommentarer", "Details", new {id = Model.SiteID })

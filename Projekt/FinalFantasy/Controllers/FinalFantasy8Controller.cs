@@ -8,15 +8,15 @@ using System.Web.Mvc;
 
 namespace FinalFantasy.Controllers
 {
-    public class FinalFantasy7Controller : Controller
+    public class FinalFantasy8Controller : Controller
     {
         //
-        // GET: /FinalFantasy7/
+        // GET: /FinalFantasy8/
 
         FinalFantasyEntities db = new FinalFantasyEntities();
 
         //Visar en sida med ett visst id
-        public ActionResult FinalFantasy7(int id)
+        public ActionResult FinalFantasy8(int id)
         {
             var game = db.Sites.Find(id);
             return View(game);
@@ -42,10 +42,10 @@ namespace FinalFantasy.Controllers
         {
             if (ModelState.IsValid)
             {
-                createComment.SiteID = 7;
+                createComment.SiteID = 8;
                 db.Comments.Add(createComment);
                 db.SaveChanges();
-                return RedirectToAction("Details", new { id = "7" });
+                return RedirectToAction("Details", new { id = "8" });
             }
             return View(createComment);
         }
@@ -65,7 +65,7 @@ namespace FinalFantasy.Controllers
             {
                 db.Entry(editComment).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Details", new { id = "7" });
+                return RedirectToAction("Details", new { id = "8" });
             }
             return View(editComment);
         }
@@ -83,7 +83,7 @@ namespace FinalFantasy.Controllers
             var comment = db.Comments.Find(id);
             db.Comments.Remove(comment);
             db.SaveChanges();
-            return RedirectToAction("Details", new { id = "7" });
+            return RedirectToAction("Details", new { id = "8" });
         }
     }
 }
