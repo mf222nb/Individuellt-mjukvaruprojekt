@@ -1,0 +1,87 @@
+﻿@model FinalFantasy.Models.Site
+
+@{
+    ViewBag.Title = "FinalFantasy9";
+}
+
+<h2>@Model.SiteName</h2>
+
+<p>
+    Final Fantasy 9 är den nionde delen i spelserien Final Fantasy från Squaresoft. Detta var den sista delen i serien som 
+    utvecklades till Playstation.
+</p>
+
+<h4>Spelmekanik</h4>
+
+<p>
+    Stridssystemet skiljer sig lite från sina föregående spel som släpptes till Playstation. I Final Fnatasy 7 och 8 kunde man enbart 
+    använda tre karaktärer åt gången under striderna men i Final Fantasy 9 så använder fyra karaktärer åt gången. 
+</p>
+<p>
+    <strong>Trance</strong>
+</p>
+<p>
+    De spelbara karaktärerna har en ny röd mätare under sin ATB - mätare. Den här mätaren kallas för Trance - mätare. Om en karaktär 
+    tar skada från fiendens attack så fylls mätaren upp, och när den är full börjar karaktären att lysa och får en ny speciell 
+    förmåga utöver sin vanliga. Det är det som man kallar för Trance i Final Fantasy 9.
+</p>
+<p>
+    <strong>Mognet</strong>
+</p>
+<p>
+    Mogent är ett postsystem som används av moogles i spelet. Moogles finns i stora delar av världen och genom att prata med dem 
+    kan man välja att spara spelet, återställa karaktärernas hälsopoäng eller att köpa saker. Under spelets gång får man hjälpa till 
+    att leverera brev till olika moogles genom mognet.
+</p>
+
+<h4>Handling</h4>
+
+<p>
+    Final Fantasy 9 handlar om att drottningen av Alexandria, Brahne, har börjat att använda avancerade magiska vapen för att terrorisera 
+    grannländerna. Hennes dotter, Prinsessan Garnet, bestämmer sig för att rymma från slottet och slår sig ihop med en grupp 
+    godhjärtade banditer som leds av Baku och Zidane som vill stoppa drottningens vilja att dominera världen. Men med tiden så märker 
+    de att hon inte är deras enda problem.
+</p>
+
+<h4>Karaktärer</h4>
+
+<p>
+    Final Fantasy 9 har åtta spelbara karaktärer
+</p>
+<ul>
+    <li>
+        <strong>Zidane Tribal</strong>: Zidane är medlem i Tantalus, och det är ett sällskap som utger sig för att vara ett teatersällskap 
+        men som egentligen är tjuvar.
+    </li>
+    <li>
+        <strong>Garnet Til Alexandros</strong>: Garnet är prinsessa av Alexandria och tronarvinge. Hon kan använda vit magi och kan 
+        summona de starkaste Eidolons.
+    </li>
+    <li>
+        <strong>Adelbart Steiner</strong>: Adelbart är Garnets livvakt. Han ska skydda henne och ogillar Zidane och Tantalusgänget. Han 
+        är inte den smartaste men han kompenserar det med styrka istället. Han kan även använda svärdsförmågor och svärdsmagi när Vivi är 
+        med i laget.
+    </li>
+    <li>
+        <strong>Vivi Ornitier</strong>: Vivi är en svart magiker. När drottningen tar makten över världen med hjälp av svarta magiker 
+        så är inte Vivi speciellt populär i resten av världen.
+    </li>
+    <li>
+        <strong>Freya Crescent</strong>: Freya är en drakkrigare från Burmecia, ett rike där det regnar hela tiden. Hon har letat över 
+        hela världen efter sin fästman Fratley som ha försvunnit från Burmecia.
+    </li>
+    <li>
+        <strong>Quina Quen</strong>: Quina är en Qu från Qu's Marsh. Det enda som Quina tänker på är mat vilket kan förklaras på vapnet 
+        som denna karaktär har, nämligen en gaffel och har förmågan att äta upp sin fiende för att lära sig dess förmågor.
+    </li>
+    <li>
+        <strong>Eiko Carol</strong>: Eiko är en sexårig flicka från Madain Sari. Där bor hon med en massa Moogles och är den enda i 
+        världen med ett frammanarhorn. Hon är mycket bra på vit magi men hon kan även summona några Eidolons.
+    </li>
+    <li>
+        <strong>Amarant Coral</strong>: Amarant är en prisjägare. Han gillar inte att samarbeta och tror på att ensam är stark. Detta 
+        intryck utplånas när Zidane räddar honom. Amarant kan kasta vapen på sin fiende men även använda Flair - tekniker på dem.
+    </li>
+</ul>
+
+@Html.ActionLink("Gå till kommentarer", "Details", new {id = Model.SiteID })
