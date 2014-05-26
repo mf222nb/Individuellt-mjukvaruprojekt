@@ -10,7 +10,7 @@
 <body>
     <header>
         <div>
-            <p>your logo here</p>
+            <img src="~/Content/Logo.png" />
         </div>
         <nav>
             <ul id="menu">
@@ -33,9 +33,11 @@
             </ul>
         </nav>
     </header>
-    @RenderBody()
+    <section>
+        @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </section>
 </body>
 </html>
