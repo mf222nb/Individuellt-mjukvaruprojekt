@@ -11,14 +11,11 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Comments</legend>
+        <legend>Kommentar</legend>
 
         @Html.HiddenFor(model => model.CommentID)
         @Html.HiddenFor(model => model.SiteID)
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Comment)
-        </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.Comment)
             @Html.ValidationMessageFor(model => model.Comment)
@@ -30,7 +27,7 @@
     </fieldset>
 }
 
-<div>
+<div class="button">
     @Html.ActionLink("Gå tillbaka", "Details", new { id = "9" })
 </div>
 

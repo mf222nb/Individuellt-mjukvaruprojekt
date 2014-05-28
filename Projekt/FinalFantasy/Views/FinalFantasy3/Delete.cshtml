@@ -14,7 +14,9 @@
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
     <p>
-        <input type="submit" value="Ta bort" /> |
-        @Html.ActionLink("Gå tillbaka", "FinalFantasy3", new { id = "3" })
+        <input type="submit" value="Ta bort" />
+    </p>
+    <p class="button">
+        @Html.ActionLink("Gå tillbaka", "Details", new { id = "3" })
     </p>
 }

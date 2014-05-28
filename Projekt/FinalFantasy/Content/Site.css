@@ -23,6 +23,10 @@ section {
     box-shadow: 2px 2px 2px 2px black;
 }
 
+div {
+    margin-left: 1%;
+}
+
 h1 {
     color: #000000;
 }
@@ -38,10 +42,26 @@ h4 {
 
 a {
     color: #000000;
+    text-decoration: none;
 }
 
 p {
     margin-left: 1%;
+}
+
+.button {
+    color: #000000;
+    background-color: #007EFF;
+    border: 1px solid black;
+    height: 100%;
+    display: inline-block;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button:hover {
+    background-color: #E1EDE2;
 }
 
 /* menu

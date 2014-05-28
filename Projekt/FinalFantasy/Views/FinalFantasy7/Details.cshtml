@@ -5,7 +5,7 @@
 }
 
 <h2>Kommentarer</h2>
-<p>
+<p class="button">
     @Html.ActionLink("Skapa ny kommentar", "Create")
 </p>
 
@@ -14,11 +14,14 @@
     <div>
         @comment.Comment
     </div>
-    <div>
+    <div class="button">
         @Html.ActionLink("Redigera", "Edit", new { id=comment.CommentID })
+    </div>
+    <div class="button">
         @Html.ActionLink("Ta bort", "Delete", new { id=comment.CommentID })
     </div>
 }
-<p>
+<p></p>
+<p class="button">
     @Html.ActionLink("Gå tillbaka", "FinalFantasy7", new { id = "7" })
 </p>
