@@ -58,6 +58,7 @@ p {
     padding: 1px;
     padding-left: 5px;
     padding-right: 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .button:hover {
