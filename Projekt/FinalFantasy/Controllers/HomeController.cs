@@ -83,6 +83,7 @@ namespace FinalFantasy.Controllers
             return View(image);
         }
 
+        //Tar bort en bild från katalogen som de ligger i och tar bort namnet ur databasen
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {

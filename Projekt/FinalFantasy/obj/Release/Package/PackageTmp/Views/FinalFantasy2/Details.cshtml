@@ -1,0 +1,27 @@
+﻿@model IEnumerable<FinalFantasy.Models.Comments>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Kommentarer</h2>
+<p class="button">
+    @Html.ActionLink("Skapa ny kommentar", "Create")
+</p>
+
+@foreach (var comment in Model)
+{
+    <div>
+        @comment.Comment
+    </div>
+    <div class="button">
+        @Html.ActionLink("Redigera", "Edit", new { id=comment.CommentID })
+    </div>
+    <div class="button">
+        @Html.ActionLink("Ta bort", "Delete", new { id=comment.CommentID })
+    </div>
+}
+<p></p>
+<p class="button">
+    @Html.ActionLink("Gå tillbaka", "FinalFantasy2", new { id = "2" })
+</p>

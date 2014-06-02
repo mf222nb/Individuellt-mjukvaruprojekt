@@ -1,0 +1,39 @@
+﻿@model FinalFantasy.Models.Site
+
+@{
+    ViewBag.Title = "FinalFantasy4";
+}
+
+<h2>@Model.SiteName</h2>
+
+<p>
+    Final Fantasy 4 är det fjärde i serien och ett RPG spel från Square som kom ut 1991. Sepelet släpptes först till SNES i Japan men 
+    har sedan dess släppts till andra plattformas också. Spelet bytte namn till Final Fantasy 2 när det släpptes utanför Japan för att 
+    Final Fantasy 2 och 3 inte släpptes utanför Japan. 
+</p>
+
+<h4>Uppbyggnad</h4>
+
+<p>
+    I Final Fantasy 4 så styr spelaren en lite större grupp av karaktärer och gör uppdrag för att komma vidare i storyn. Final Fantasy 4 
+    introducerar en ny function i och med detta spel, nämligen Active Time Battle (ATB) systemet, vilket är lite annorlunda mot de tidigare 
+    turn - based systemen från tidigare spel. ATB systemet fungerar så att spelaren får kanppa in komandon som den vill att karaktärerna ska 
+    göra i real tid när man slåss mot monster.
+</p>
+
+<h4>Story</h4>
+
+<p>
+    Spelet handlar om den mörka riddaren Cecil Harvey som jobbar för staden Barons luftflotta och själ magiska kristaller åt honom. När Golbez 
+    har stulit vattenkristallen från oskyldiga människor och mördat dessa så frågar Cecil kungen om hans anledningar. Han blir då fråntagen sin titel 
+    och skickas med sin vän Kain på ett uppdrag att leverera en ring till en by. 
+</p>
+<p>
+    När Cecil och Kain når byn så förstörs den av ringen. I byn träffar han Rydia, vars moder dog när Cecil dödade monstret som vaktade byn, vilken styrdes 
+    av modern. Hon attackerar Cecil och Kain, vilket resulterar att hon tappar medvetandet medans Kain försvinner. Cecil lyckas att rädda henne från 
+    Barons soldater och därmed övertyga henne om att det var ett misstag. När de tillsammans med trollkarlen Tellah når slottet Damcyan 
+    så blir de plundrade. Av Dancyans prins Edward får de veta om Golbez, som har tagit över Barons luftflotta, Red Wings.
+</p>
+<p class="button">
+    @Html.ActionLink("Gå till kommentarer", "Details", new {id = Model.SiteID })
+</p>

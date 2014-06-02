@@ -1,0 +1,22 @@
+﻿@model FinalFantasy.Models.Comments
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Ta bort</h2>
+
+<p>
+    Är du säker på att du vill ta bort denna kommentar 
+    <strong>@Model.Comment</strong>
+</p>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Ta bort" />
+    </p>
+    <p class="button">
+        @Html.ActionLink("Gå tillbaka", "Details", new { id = "4" })
+    </p>
+}

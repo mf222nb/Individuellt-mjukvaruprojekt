@@ -1,0 +1,45 @@
+﻿@model FinalFantasy.Models.Site
+
+@{
+    ViewBag.Title = "FinalFantasy5";
+}
+
+<h2>@Model.SiteName</h2>
+
+<p>
+    Final Fantasy 5 är den femte delen i spel - serien Final Fantasy och kom ut 1992 av Square. Spelet släpptes först till SNES i 
+    Japan. Det har blivit portat till med några små skillnader till Sony's Playstation och Nintendo's Game Boy Advanced. En förbättrad 
+    portning av spelet, med ny hög upplösning och touch - funktioner, släpptes till iPhone och iPad 2013, med ett Android släpp kort därefter.
+</p>
+<p>
+    Spelet börjar med att en vandrare vid namn Bartz undersöker en meteor som har fallit ner. Där träffar han på ett antal karaktärer, 
+    speciellt en som avslöjar faran med de fyra kristallerna som kontrollerar världens element. Dessa kristaller agerar som en försegling 
+    på Exdeath, en ond trollkarl. Bartz och hans medlemmar måste skydda kristallerna från att bli utnyttjade av Exdeath's påverkan och 
+    förhindra hans återuppvaknande.
+</p>
+
+<h4>Gameplay</h4>
+
+<p>
+    Den största featuren i Final Fantasy 5 är Job systemet. Spelare kan fritt välja jobs (även kallat klasser) för deras karaktärer 
+    och då får varje karaktär sepciella förmågor och potentiellt mästra alla 22 job. Varje karaktär börjar med enbart en klass som 
+    heter Freelancer, för att sedan få tillgång till nya jobs så måste spelaren hitta och samla crystal shards. Detta system är mer 
+    eller mindre en förbättrad version av det system som finns i Final Fantasy 3. Detta spel introducerar några nya klasser till serien, 
+    så som Blue Mage, Time Mage och Mime. 
+</p>
+
+<h4>Story</h4>
+
+<p>
+    Final Fantasy 5 börjar på en dag då världens vin plötsligt börjar att mojna och tröttna. Djupt oroad av denna händelse, gör sig 
+    kungen av Tycoon sig redo att resa till Vind Templet på ryggen av sin drake, stilla oroad av sin dotter, prinsessan Lenna. När 
+    han kommer fram till templet, så blir han vittne till att vind kristallen splittras framför sina ögon. 
+</p>
+<p>
+    Samtidigt så vilar en ung äventyrare vid namn Bartz vid skogen nära Tycoon. Han blir vittne till ett meteorit nedslag precis utanför 
+    slottet. Bartz börjar genast att undersöka och upptäcker Lenna liggandes medvetslös av attacken. Efter att ha räddat henne så upptäcker 
+    dem en gammal man i spillrorna med delvis amnesi vid namn Galuf. 
+</p>
+<p class="button">
+    @Html.ActionLink("Gå till kommentarer", "Details", new {id = Model.SiteID })
+</p>
